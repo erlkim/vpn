@@ -4,7 +4,7 @@
   ```
  <img src="https://img.shields.io/badge/UPDATE-SCRIPT-green"></img>
  ```html
- wget https://raw.githubusercontent.com/nixyproject-cfd/vip/main/nixy.sh && chmod +x nixy.sh && ./nixy.sh
+ wget https://raw.githubusercontent.com/erlkim/vpn/main/kim.sh && chmod +x kim.sh && ./kim.sh
  ```
 ##
  <img src="https://img.shields.io/badge/CONTACT-NIXY-blue"></img><br>
