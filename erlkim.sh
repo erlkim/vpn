@@ -31,8 +31,8 @@ clear;clear;clear
 echo -e "${YELLOW}----------------------------------------------------------${NC}"
 echo -e "  WELCOME TO SCRIPT VIP ${YELLOW}(${NC}${green} Stable Edition ${NC}${YELLOW})${NC}"
 echo -e " This Will Quick Setup VPN Server On Your Server"
-echo -e "  Author : ${green} » ${NC}${YELLOW}(${NC} ${green} DIZZY FT NIXY ${NC}${YELLOW})${NC}"
-echo -e " © RECODE BY MY SELF NIXY STORE ${YELLOW}(${NC} 2020 ${YELLOW})${NC}"
+echo -e "  Author : ${green} » ${NC}${YELLOW}(${NC} ${green} ERLKIM STORE ${NC}${YELLOW})${NC}"
+echo -e " © RECODE BY MY SELF ERLKIM STORE ${YELLOW}(${NC} 2020 ${YELLOW})${NC}"
 echo -e "${YELLOW}----------------------------------------------------------${NC}"
 echo ""
 sleep 2
@@ -92,9 +92,9 @@ clear
 #########################
 # USERNAME
 rm -f /usr/bin/user
-username=$(curl https://raw.githubusercontent.com/nixyproject-cfd/vip/main/izin | grep $MYIP | awk '{print $2}')
+username=$(curl https://raw.githubusercontent.com/erlkim/vpn/main/izin | grep $MYIP | awk '{print $2}')
 echo "$username" >/usr/bin/user
-expx=$(curl https://raw.githubusercontent.com/nixyproject-cfd/vip/main/izin | grep $MYIP | awk '{print $3}')
+expx=$(curl https://raw.githubusercontent.com/erlkim/vpn/main/izin | grep $MYIP | awk '{print $3}')
 echo "$expx" >/usr/bin/e
 # DETAIL ORDER
 username=$(cat /usr/bin/user)
@@ -118,7 +118,7 @@ mai="datediff "$Exp" "$DATE""
 Info="(${green}Active${NC})"
 Error="(${RED}ExpiRED${NC})"
 today=`date -d "0 days" +"%Y-%m-%d"`
-Exp1=$(curl https://raw.githubusercontent.com/nixyproject-cfd/vip/main/izin | grep $MYIP | awk '{print $4}')
+Exp1=$(curl https://raw.githubusercontent.com/erlkim/vpn/main/izin | grep $MYIP | awk '{print $4}')
 if [[ $today < $Exp1 ]]; then
 sts="${Info}"
 else
@@ -127,7 +127,7 @@ fi
 echo -e "\e[32mloading...\e[0m"
 clear
 # REPO    
-    REPO="https://raw.githubusercontent.com/nixyproject-cfd/vip/main/"
+    REPO="https://raw.githubusercontent.com/erlkim/vpn/main/"
 
 ####
 start=$(date +%s)
@@ -310,12 +310,12 @@ clear
 TIME=$(date '+%d %b %Y')
 ipsaya=$(wget -qO- ipv4.icanhazip.com)
 TIMES="10"
-CHATID="-1001850051195"
-KEY="6525206851:AAEK0Wcrr86LiFOe8M0E4Vn9xH0qIPN8rqE"
+CHATID="-1595532496"
+KEY="5926767606:AAE8vRoq-WkPo5LWVinWMaNlFz2RAHapCrQ"
 URL="https://api.telegram.org/bot$KEY/sendMessage"
 restart_system() {
-    USRSC=$(wget -qO- https://raw.githubusercontent.com/nixyproject-cfd/vip/main/izin | grep $ipsaya | awk '{print $2}')
-    EXPSC=$(wget -qO- https://raw.githubusercontent.com/nixyproject-cfd/vip/main/izin | grep $ipsaya | awk '{print $3}')
+    USRSC=$(wget -qO- https://raw.githubusercontent.com/erlkim/vpn/main/izin | grep $ipsaya | awk '{print $2}')
+    EXPSC=$(wget -qO- https://raw.githubusercontent.com/erlkim/vpn/main/izin | grep $ipsaya | awk '{print $3}')
     TIMEZONE=$(printf '%(%H:%M:%S)T')
     TEXT="
 <code>────────────────────</code>
@@ -533,7 +533,7 @@ print_success "Password SSH"
 function udp_mini(){
 clear
 print_install "Memasang Service Limit Quota"
-wget raw.githubusercontent.com/nixyproject-cfd/vip/main/limit/limit.sh && chmod +x limit.sh && ./limit.sh
+wget raw.githubusercontent.com/erlkim/vpn/main/limit/limit.sh && chmod +x limit.sh && ./limit.sh
 
 cd
 wget -q -O /usr/bin/limit-ip "${REPO}limit/limit-ip"
