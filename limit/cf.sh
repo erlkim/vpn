@@ -9,8 +9,8 @@ echo ""
 echo ""
 #sub=$(</dev/urandom tr -dc a-z0-9 | head -c3)
 read -rp "Input Domain Name. Example ( nama ): " -e sub
-DOMAIN=server.081.my.id
-SUB_DOMAIN=${sub}.server.081.my.id
+DOMAIN=hehe.081.my.id
+SUB_DOMAIN=${sub}.hehe.081.my.id
 CF_ID=bakoltempe37@gmail.com
 CF_KEY=f3e50e88a1654a0cf5c228133dc74ba217566
 set -euo pipefail
