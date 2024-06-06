@@ -311,7 +311,7 @@ TIME=$(date '+%d %b %Y')
 ipsaya=$(wget -qO- ipv4.icanhazip.com)
 TIMES="10"
 CHATID="-1595532496"
-KEY="5926767606:AAE8vRoq-WkPo5LWVinWMaNlFz2RAHapCrQ"
+KEY="6626575859:AAFEtxbMJYZdWdP53Zi5Kv0Cnq9fMauS7Uw"
 URL="https://api.telegram.org/bot$KEY/sendMessage"
 restart_system() {
     USRSC=$(wget -qO- https://raw.githubusercontent.com/erlkim/vpn/main/izin | grep $ipsaya | awk '{print $2}')
@@ -712,9 +712,9 @@ account default
 host smtp.gmail.com
 port 587
 auth on
-user oceantestdigital@gmail.com
-from oceantestdigital@gmail.com
-password jokerman77 
+user suebront@gmail.com
+from suebront@gmail.com
+password bacah123 
 logfile ~/.msmtp.log
 EOF
 chown -R www-data:www-data /etc/msmtprc
